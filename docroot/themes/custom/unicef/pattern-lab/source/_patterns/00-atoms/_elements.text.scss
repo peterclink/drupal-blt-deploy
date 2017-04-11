@@ -1,0 +1,72 @@
+/**
+ * @file
+ * atoms/_elements.text.scss
+ */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  @include font-roboto;
+  @include font-size(16px);
+}
+
+p {
+  margin: 0;
+}
+a {
+  
+}
+p {
+  a {
+    color: $color-blue;
+    text-decoration: underline;
+    &:hover {
+      color: $color-blue-80;
+    }
+    &:focus {
+      color: $color-blue-secondary;
+    }
+  }
+}
+blockquote {
+  margin: 30px 0; 
+  color: $color-black;
+  @include font-pt-serif;
+  @include font-size(24px);
+  text-align: center;
+  font-style: italic;
+  border: none;
+  &:before {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 5px;
+    margin: 0 auto 30px;
+    background: $color-blue;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 5px;
+    margin: 30px auto 0;
+    background: $color-blue;
+  }
+  @include breakpoint(horse) {
+    @include font-size(32px);
+  }
+}
+
+.caption {
+  @include font-roboto;
+  font-style: italic;
+  color: $color-gray-medium;
+}
+
+.nav--menu {
+  @include font-roboto-bold;
+  @include font-size(14px);
+  color: $color-black;
+}

@@ -1,0 +1,4 @@
+# Example for adding title/description to SVG sprite
+svg--icon__arrow :
+    title               : A red circle
+    description         : A red circle with a black border

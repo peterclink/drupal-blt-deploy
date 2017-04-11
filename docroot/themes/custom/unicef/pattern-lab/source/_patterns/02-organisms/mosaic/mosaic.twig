@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="mosaic--dropdown col-md-12">
+    <div class="mosaic--dropdown-title col-md-7">
+      <span class="mosaic--every-child">for every child, </span>
+      <span class="mosaic--sub-title">Title for this dropdown</span>
+    </div>
+    <div class="mosaic--dropdown-button col-md-5">
+      {% include "@atoms/buttons/dropdown-button/dropdown-button.twig"
+        with { 'class': dropdown.class, 'value': dropdown.value,
+        'classli' : dropdown.classli, 'classmenu' : dropdown.classmenu,
+        'classitems': dropdown.classitems , 'classactive': dropdown.classactive,
+        'classarrow' : dropdown.classarrow, 'classline' : dropdown.classline}
+      %}
+    </div>
+    <div class="mosaic-title col-md-12">
+      <span class="mosaic--sub-title">Title Mosaic</span>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="mosaic--tile-featured col-md-9">
+    {% include "molecules-tile-featured" %}
+  </div>
+  <div class="mosaic--tile first col-md-3">
+    {% include "molecules-tile"
+      with {'class': ctatertiary.class}
+    %}
+  </div>
+</div>
+
+  <div class="row">
+    <div class="mosaic--tile col-md-3">
+      {% include "molecules-tile" %}
+    </div>
+    <div class="mosaic--tile col-md-3">
+      {% include "molecules-tile" %}
+    </div>
+    <div class="mosaic--tile col-md-3">
+      {% include "molecules-tile" %}
+    </div>
+    <div class="mosaic--tile last col-md-3">
+      {% include "molecules-tile"
+        with {'class': ctatertiary.class }
+      %}
+    </div>
+  </div>
+
+  <div class="mosaic--button col-md-12">
+    {% include "atoms-cta-secondary"
+      with {'class': ctasecondary.class}
+    %}
+  </div>
+</div>

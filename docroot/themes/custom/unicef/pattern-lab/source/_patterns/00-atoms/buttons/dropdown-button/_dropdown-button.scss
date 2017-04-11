@@ -1,0 +1,113 @@
+.dropdown{
+  float:left;
+  .dropdown--toggle-explore.keep-active{
+    background: $color-white;
+    color: $color-blue;
+    text-decoration: none;
+    border: 3px solid #1CABE2;
+    .svg-dropdown-arrow{
+      display: none;
+    }
+    .svg-dropdown-arrow-blue{
+      display: inline-block;
+    }
+  }
+  .dropdown--toggle-explore{
+    @extend .btn-font-definition;
+    background-color: transparent;
+    display: inline-block;
+   	color: $color-blue;
+   	padding: 5px 10px;
+   	border-radius: $border-radius;
+   	text-align: center;
+   	transition: background 0.2s ease;
+    border: 3px solid transparent;
+    @include breakpoint(dog){
+      color: $color-white;
+      background:  $color-blue;
+      border: 3px solid $color-white;
+      padding: 0.5rem 1rem;
+    }
+    &:active,
+    &:focus,
+    &:hover {
+      background: $color-white;
+      color: $color-blue;
+      text-decoration: none;
+      @include breakpoint(dog){
+          border: 3px solid $color-blue;
+          .svg-dropdown-arrow{
+            display: none;
+          }
+          .svg-dropdown-arrow-blue{
+            display:inline-block;
+          }
+      }
+    }
+    .svg-dropdown-arrow{
+      display: inline-block;
+    }
+    .svg-dropdown-arrow-blue{
+      display:none;
+      transition: all 1s ease;
+    }
+  }
+
+  .dropdown--menu-explore{
+    border: 0;
+    box-shadow: none;
+    display: block;
+
+    opacity:0;
+    transition: all 200ms ease-in;
+    border: 1px solid transparent;
+
+    @include breakpoint(dog){
+      border: 1px solid #ccc;
+      @include box-shadow(0, 6px, 12px, rgba(0, 0, 0, 0.175));
+    }
+    .dropdown--items-explore{
+      width: 100%;
+      .dropdown--active-explore {
+        color: $color-black;
+        display: block;
+        @include breakpoint(dog){
+          padding: 12px 15px;
+        }
+      }
+    }
+  }
+}
+
+.svg-dropdown-arrow-blue-rotate{
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.svg-dropdown-arrow-div{
+  padding-left: 10px;
+  float: right;
+}
+
+.svg-dropdown-arrow-div-blue{
+  padding-left: 10px;
+  float: right;
+}
+
+.dropdown.open .dropdown--menu-explore{
+  display: block;
+  opacity: 1;
+  position: relative;
+  @include breakpoint(dog){
+    position: absolute;
+  }
+}
+
+.vertical-line{
+  content: '';
+  display: none;
+  height: 100%;
+  margin-left: 58px;
+  position: absolute;
+  border-left: 1px solid $color-gray-medium;
+}

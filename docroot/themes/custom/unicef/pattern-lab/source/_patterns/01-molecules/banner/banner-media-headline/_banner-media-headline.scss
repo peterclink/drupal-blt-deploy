@@ -1,0 +1,52 @@
+.banner--media-headline-image{
+  height: 340px;
+  line-height: 340px;
+  text-align: center;
+  background-color: $color-gray-light;
+  border: 1px solid $color-black;
+  @include breakpoint(dog){
+    height: 360px;
+  }
+  @include breakpoint(horse){
+    height: 640px;
+    line-height: 640px;
+  }
+}
+.banner--media-headline-text{
+  height: 100%;
+  padding-left: 25px;
+  color: $color-white;
+  float: right;
+  @include breakpoint(dog){
+    height: 360px;
+  }
+  @include breakpoint(horse){
+    height: 640px;
+  }
+}
+.banner--media-headline-text-orange{
+  background-color: $color-orange;
+}
+.banner--media-headline-text-primary-blue{
+  background-color: $color-blue;
+}
+.banner--media-headline-text-secondary-blue{
+  background-color: $color-blue-secondary;
+}
+.banner--title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include breakpoint(horse){
+    margin-top: 200px;
+  }
+}
+.banner--teaser{
+  margin-bottom: 10px;
+  @include breakpoint(horse){
+    margin-bottom: 40px;
+  }
+}
+.banner--cta-button{
+  margin-bottom: 20px;
+  a { width: 200px;}
+}

@@ -1,0 +1,64 @@
+.btn--input-search {
+	position: relative;
+	padding: 15px 50px 15px 0;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+    @include font-roboto;
+	@include font-size(14px);
+	font-weight: bold;
+	line-height: 20px;
+	color: $color-black;
+	background-color: #C5EFFC;
+
+	.btn-txt-search {
+		display: block;
+		max-width: 120px;
+		&:after {
+			float: right;
+	    	content: "";
+	    	display: inline-block;
+				@extend %svg-common ;
+				@extend .svg-search_icon !optional;
+				@extend .svg-search_icon-dims !optional;
+	    }
+	}
+
+	.btn-txt-close {
+		max-width: 120px;
+		display: none;
+		&:after {
+			float: right;
+	    	content: "";
+	    	display: inline-block;
+	    	//TODO: remember to change for close-icon
+				@extend %svg-common ;
+				@extend .svg-search_icon !optional;
+				@extend .svg-search_icon-dims !optional;
+	    }
+	}
+
+    &:before {
+    	content: '';
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    height: 0px;
+	    width: 100%;
+	    background: transparent;
+    }
+
+    &:focus,
+    &:hover {
+	  color: $color-black;
+	  text-decoration: none;
+	}
+
+	&:hover {
+	  &:before {
+	  	height: 5px;
+    	background: $color-blue;
+	  }
+	}
+}

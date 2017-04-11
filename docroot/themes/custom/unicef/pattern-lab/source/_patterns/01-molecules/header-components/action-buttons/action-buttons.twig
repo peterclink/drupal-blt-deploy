@@ -1,0 +1,16 @@
+<div class="col-md-12">
+  <div>
+      {% include "atoms-dropdown-button"
+        with { 'class': dropdown.class, 'value': dropdown.value }
+      %}
+  </div>
+  <div>
+      {% include "@atoms/buttons/standalone-button/standalone-button.twig"
+      with { 'class': default.class, 'value': default.value }
+       %}
+
+      {% include "@atoms/buttons/donate-button/donate-button.twig"
+      with { 'class': donate.class, 'value': donate.value }
+      %}
+  </div>
+</div>

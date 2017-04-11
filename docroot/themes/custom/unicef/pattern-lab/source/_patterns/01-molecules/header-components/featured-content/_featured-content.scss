@@ -1,0 +1,41 @@
+.views-field-title{
+  @include font-size(22px);
+  text-align: center;
+}
+.views-field-category{
+  @include font-size(14px);
+  color: $color-gray-dark;
+  line-height: 40px;
+}
+.views-field-subtitle{
+  @include font-size(16px);
+  line-height: 40px;
+}
+.field-icon{
+  display: inline-block;
+}
+.views-field-image{
+  border: 1px solid $color-black;
+  border-radius: 5px 5px;
+  width: 100%;
+  height: 150px;
+  line-height: 150px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $color-gray-extra-light;
+}
+.views-explore-button{
+  margin-top: 20px;
+}
+.field-content-type{
+  color: $color-gray-dark;
+  &:visited{
+    color: $color-gray-dark;
+  }
+  &:active,
+  &:focus,
+  &:hover{
+    text-decoration: none;
+    color: $color-blue;
+  }
+}

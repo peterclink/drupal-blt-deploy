@@ -1,0 +1,13 @@
+.btn--default {
+  background: $color-blue;
+  color: $color-white;
+
+  &:active,
+  &:visited,
+  &:focus,
+  &:hover {
+    background: $color-white;
+    color: $color-blue;
+    border: 2px solid $color-blue;
+  }
+}

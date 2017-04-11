@@ -1,0 +1,17 @@
+{
+    "type": "submit",
+    "value": "Explore what we do",
+    "class": "btn btn--default",
+
+    "title": "See our range of initiatives on behalf of children.",
+    "categories": {
+      "campaing" : "Campaing",
+      "emergency" :"Emergency alert",
+      "programee": "Programee"
+    },
+    "subtitles": {
+      "children": "Children on the move",
+      "devastating" : "A devastating toll for children",
+      "safe": "Given children safe passage"
+    }
+}

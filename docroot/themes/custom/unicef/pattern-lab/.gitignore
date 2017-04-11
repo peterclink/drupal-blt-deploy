@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+export/*
+public/*
+vendor/*
+source/styleguide/*
+config/*.json
+
+*.log
+
+# Pattern Lab
+public
+source/_twig-components
+source/images/css/
+source/images/sprites/
+source/css/

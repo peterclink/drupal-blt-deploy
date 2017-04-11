@@ -1,0 +1,53 @@
+.tile-featured--content {
+  width: 810px;
+  height: 470px;
+  @include box-shadow(0, 3px, 12px,rgba(0, 0, 0, 0.175));
+  border-radius: 5px;
+  background-color: $color-white;
+}
+
+.tile-featured--image {
+  width: 540px;
+  height: 470px;
+  background-color: $color-gray-light;
+  /* Remove this after put image */
+  line-height: 470px;
+  text-align: center;
+  /* Remove this after put image */
+}
+
+.tile-featured--sub-content {
+  height: 470px;
+  width: 270px;
+}
+
+.tile-featured--content-category {
+  width: 179px;
+  height: 20px;
+  @include font-size(12px);
+  font-weight: 500;
+  line-height: 20px;
+  margin: 20px 0;
+  color: $color-gray-dark;
+}
+
+.tile-featured--title {
+  width: 235.5px;
+  height: 24px;
+  @include font-size(22px);
+  line-height: 24px;
+  margin: 12px 0;
+  color: $color-black;
+}
+
+.tile-featured--paragraph {
+  width: 235.5px;
+  height: 96px;
+  @include font-size(16px);
+  line-height: 24px;
+  color: $color-black;
+}
+
+.tile-featured--button {
+  margin: 220px 0 20px;
+}

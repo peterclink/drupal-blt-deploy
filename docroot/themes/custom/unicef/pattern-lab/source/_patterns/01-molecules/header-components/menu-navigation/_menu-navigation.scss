@@ -1,0 +1,141 @@
+.nav--menu {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  @include breakpoint(dog) {
+    margin: 0 auto;
+  }
+  .nav--menu-item {
+    float: none;
+    display: inline;
+    @include breakpoint(dog) {
+      float: left;
+      width: 25%;
+    }
+    .nav--menu-active {
+      font-weight: 700;
+      @include font-size(14px);
+      line-height: 16px;
+      text-align: left;
+      padding-left: 30px;
+      text-decoration: none;
+      color: $color-black;
+      @include breakpoint(dog) {
+        text-align: center;
+        padding-left: 15px;
+      }
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        content: '';
+        width: 100%;
+        background: transparent;
+        @include breakpoint(dog) {
+          transition: all ease 0.2s;
+        }
+      }
+      &:hover {
+        background: transparent;
+        @include breakpoint(dog){
+          @include box-shadow(0, -2px, 4px, 1px, rgba(0, 0, 0, 0.25));
+          background-color: $color-gray-extra-light;
+        }
+        &:after {
+          background: none;
+          @include breakpoint(dog) {
+            height: 5px;
+            background: $color-blue;
+          }
+        }
+      }
+      &:active,
+      &:focus,
+      &:visited {
+        @include box-shadow(0, 0, 0, 1px, rgba(0, 0, 0, 0.25));
+        background-color: $color-gray-light;
+        @include breakpoint(dog) {
+          @include box-shadow(0, -2px, 4px, 1px, rgba(0, 0, 0, 0.25));
+          background-color: $color-gray-extra-light;
+        }
+      }
+    }
+  }
+}
+.nav--menu {
+  .nav--menu-item {
+    &.active {
+      @include box-shadow(0, -2px, 4px, 1px, rgba(0, 0, 0, 0.25));
+      background-color: $color-gray-extra-light;
+
+      .nav--menu-active {
+        @include box-shadow(0, 0, 0, 1px, rgba(0, 0, 0, 0.25));
+        background-color: $color-gray-light;
+        @include breakpoint(dog) {
+          background-color: transparent;
+          box-shadow: none;
+        }
+
+        &:after {
+          height: 100%;
+          width: 5px;
+          background: $color-blue;
+          @include breakpoint(dog) {
+            height: 5px;
+            width: 100%;
+            background: $color-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav--submenu-secondary{
+  display: none;
+  float:left;
+  width: 35%;
+  .nav--submenu{
+    @include box-shadow(0, -2px, 4px, 1px, rgba(0, 0, 0, 0.25));
+    background-color: $color-gray-light;
+
+    .nav--submenu-item{
+      padding: 0.313em 0em 0.313em 8em;
+      &.active{
+        padding-left: 9em;
+        .nav--submenu-active{
+          color: $color-blue;
+        }
+        .nav--submenu-item-selected{
+          display: inline;
+        }
+      }
+      .nav--submenu-active{
+        @extend .btn-font-definition;
+        text-decoration: none;
+        color: $color-black;
+      }
+      .nav--submenu-item-selected{
+        display: none;
+      }
+    }
+  }
+}
+
+.nav--show-submenu{
+  display: none;
+  @include breakpoint(dog){
+    display:block;
+  }
+}
+.nav--hide-submenu{
+  display: none;
+}
+
+.nav--menu:hover .nav--submenu-secondary{
+  display: none;
+  @include breakpoint(dog){
+    display: block;
+  }
+}

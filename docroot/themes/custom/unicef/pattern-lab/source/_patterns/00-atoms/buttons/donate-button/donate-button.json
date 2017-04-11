@@ -1,0 +1,5 @@
+{
+    "type": "submit",
+    "value": "DONATE",
+    "class": "btn btn--donate"
+}

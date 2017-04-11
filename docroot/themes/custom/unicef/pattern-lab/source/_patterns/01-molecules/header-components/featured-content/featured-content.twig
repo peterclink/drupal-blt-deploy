@@ -1,0 +1,56 @@
+<section class="views-element-container contextual-region block block-views clearfix">
+  <h2 class="block-title col-md-12 views-field-title">{{title}}</h2>
+  <div class="form-group">
+    <div class="contextual-region view">
+      <div class="view-content col-md-12">
+        <div class="views-row col-md-4">
+          <div class="views-field views-field-category">
+            <span class="field-icon svg-feed svg-feed-dims"></span>
+            <span class="field-content">
+                <a href="#" class="field-content-type">{{categories.campaing}}</a>
+            </span>
+          </div>
+          <div class="views-field views-field-image">
+            <p>IMAGE</p>
+          </div>
+          <div class="views-field views-field-subtitle">
+            <span class="field-content">{{subtitles.children}}</span>
+          </div>
+        </div>
+        <div class="views-row col-md-4">
+          <div class="views-field views-field-category">
+            <span class="field-icon svg-feed svg-feed-dims"></span>
+            <span class="field-content">
+                <a href="#" class="field-content-type">{{categories.emergency}}</a>
+            </span>
+          </div>
+          <div class="views-field views-field-image">
+            <p>IMAGE</p>
+          </div>
+          <div class="views-field views-field-subtitle">
+            <span class="field-content">{{subtitles.devastating}}</span>
+          </div>
+        </div>
+        <div class="views-row col-md-4">
+          <div class="views-field views-field-category">
+            <span class="field-icon svg-feed svg-feed-dims"></span>
+            <span class="field-content">
+                <a href="#" class="field-content-type">{{categories.programee}}</a>
+            </span>
+          </div>
+          <div class="views-field views-field-image">
+            <p>IMAGE</p>
+          </div>
+          <div class="views-field views-field-subtitle">
+            <span class="field-content">{{subtitles.safe}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="views-explore-button col-md-12 text-center">
+        {% include "@atoms/buttons/standalone-button/standalone-button.twig"
+          with { 'attributes': attributes }
+        %}
+      </div>
+    </div>
+  </div>
+</section>

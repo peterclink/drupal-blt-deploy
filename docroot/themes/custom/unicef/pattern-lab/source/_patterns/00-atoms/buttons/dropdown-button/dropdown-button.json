@@ -1,0 +1,16 @@
+{
+    "type": "button",
+    "id" : "dropdown-menu",
+    "value": "EXPLORE UNICEF",
+    "class": "dropdown-toggle dropdown--toggle-explore",
+    "classli": "dropdown--explore",
+    "classmenu": "dropdown--menu-explore",
+    "classitems": "dropdown--items-explore",
+    "classactive": "dropdown--active-explore",
+    "classarrow" : "",
+    "classline": "",
+    "names" : [
+      "About UNICEF", "Where we work", "Work for UNICEF", "UNICEF Connect",
+      "Voices of Youth","UNICEF data","Support UNICEF"
+    ]
+}

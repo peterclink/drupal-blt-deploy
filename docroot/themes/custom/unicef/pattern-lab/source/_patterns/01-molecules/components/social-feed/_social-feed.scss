@@ -1,0 +1,112 @@
+.social-feed {
+  display: flex;
+  justify-content: center;
+  svg{
+    fill: $color-blue;
+    max-height: 18px;
+    max-width: 18px;
+  }
+}
+
+.social-feed--items{
+  width: 100px;
+  text-align: center;
+  &.active {
+    .social-feed--link{
+     border-bottom-color: $color-blue;
+     border-bottom-width: 3px;
+     &:hover{
+       border-bottom-color: $color-blue;
+       border-bottom-width: 3px;
+     }
+    }
+  }
+}
+
+.social-feed--content{
+  margin-top: 20px
+}
+
+.social-feed--content-image{
+  display: none;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+  line-height: 100px;
+  text-align: center;
+  background-color: $color-gray-medium;
+  @include breakpoint(dog){
+    display: block;
+  }
+}
+
+.social-feed--content-description{
+  width: 270px;
+  @include font-size(12px);
+  @include breakpoint(horse){
+    width: 300px;
+  }
+  p{
+    font-weight: 500;
+  }
+  svg{
+    fill: $color-blue;
+    max-height: 18px;
+    max-width: 18px;
+    margin-bottom: -5px;
+  }
+}
+
+.social-feed--carousel{
+  margin-left: 40px;
+}
+
+.social-feed--carousel-item{
+  float: left;
+}
+
+.social-feed--content .owl-prev{
+  position: absolute;
+  top: 20%;
+  left: -13%;
+  @include breakpoint(mouse){
+    left: -8%;
+  }
+  @include breakpoint(dog){
+    left: -5%;
+  }
+  @include breakpoint(horse){
+    left: -3%;
+  }
+}
+.social-feed--content .owl-next{
+  position: absolute;
+  top: 20%;
+  left: 77%;
+  @include breakpoint(mouse){
+    left: 85%;
+  }
+  @include breakpoint(dog){
+    left: 90%;
+  }
+  @include breakpoint(horse){
+    left: 94%;
+  }
+}
+
+.social-feed--content .owl-theme .owl-nav .owl-prev,.social-feed--content .owl-theme .owl-nav .owl-next{
+  background-color: transparent;
+  &:hover{
+    background-color: transparent;
+  }
+}
+
+.svg-dropdown-arrow-blue-social-feed-prev{
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.svg-dropdown-arrow-blue-social-feed-next{
+  display: inline-block;
+  transform: rotate(270deg);
+}

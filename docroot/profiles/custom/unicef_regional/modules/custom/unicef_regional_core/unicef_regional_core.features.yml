@@ -1,0 +1,15 @@
+bundle: unicef_regional
+excluded:
+  - lightning_core.settings
+  - entity_browser.browser.image_browser
+  - entity_browser.browser.media_browser
+  - media_entity.bundle.document
+  - media_entity.bundle.image
+  - media_entity.bundle.instagram
+  - media_entity.bundle.tweet
+  - media_entity.bundle.video
+  - scheduled_updates.scheduled_update_type.multiple_node_embargo
+  - user.role.layout_manager
+  - user.role.media_creator
+  - user.role.media_manager
+required: true

@@ -1,0 +1,72 @@
+.column--content {
+
+	margin: 0 0 20px;
+
+	figure {
+		margin: 0;
+	}
+	
+	img {
+		margin: 0 0 20px; 
+	}
+
+	h4 {
+		margin: 0 0 20px;
+		color: $color-gray-dark;
+	}
+
+	.cta--tertiary {
+		display: inline-block;
+		margin: 15px 0 0;
+		@include font-size(14px);
+	}
+
+}
+
+.img-circle {
+	figure {
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+		margin: 0 auto 20px;
+		display: block;
+		@include border-radius(50%);
+
+		img {
+			width: auto;
+		    max-height: 100%;
+		    max-width: inherit;
+		    min-width: 100%;
+		    min-height: 100%;
+		}
+
+		@include breakpoint(horse) {
+			width: 320px;
+			height: 320px;
+		}
+
+	}
+	&.col-sm-4 {
+		figure {
+			width: 175px;
+			height: 175px;
+			@include breakpoint(horse) {
+				width: 200px;
+				height: 200px;
+			}
+		}
+	}
+}
+
+.no-image {
+	figure, img {
+		display: none;
+	}
+}
+
+
+
+
+
+
+

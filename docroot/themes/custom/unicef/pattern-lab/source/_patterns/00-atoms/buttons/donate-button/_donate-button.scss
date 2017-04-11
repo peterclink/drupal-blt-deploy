@@ -1,0 +1,15 @@
+.btn--donate {
+  background: $color-white;
+  color: $color-orange;
+  border: 2px solid $color-orange;
+  width: 100%;
+  @include breakpoint(dog){
+    width: auto;
+  }
+
+  &:focus,
+  &:hover {
+    background: $color-orange;
+    color: $color-white;
+  }
+}

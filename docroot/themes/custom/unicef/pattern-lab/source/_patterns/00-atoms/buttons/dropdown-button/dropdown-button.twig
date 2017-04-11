@@ -1,0 +1,16 @@
+<ul class="dropdown--list">
+  <li class="dropdown {{classli}} keep-open">
+    <a href="" class="{{class}}" data-target="#" data-toggle="dropdown" aria-expanded="false">{{value}}
+        <span class="svg-dropdown-arrow svg-dropdown-arrow-dims"></span>
+        <span class="vertical-line {{classline}}"></span>
+        <span class="svg-dropdown-arrow-blue svg-dropdown-arrow-blue-dims {{classarrow}}"></span>
+    </a>
+    <ul class="menu dropdown-menu {{classmenu}}">
+      {% for name in names %}
+      <li class="expanded dropdown {{classitems}}">
+        <a href="" data-drupal-link-system-path="<front>" class="is-active {{classactive}}">{{name}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+</ul>

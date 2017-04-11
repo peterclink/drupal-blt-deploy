@@ -1,0 +1,22 @@
+<ul class="menu nav navbar-nav nav--menu-language">
+  {% for item in items %}
+  <li class="menu-item expanded dropdown nav--menu-language-item">
+    <a href="" class="is-active nav--menu-language-active">{{item}}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<ul class="dropdown--main-language">
+  <li class="dropdown dropdown--language">
+    <a href="" class="dropdown-toggle dropdown--toggle-language" data-target="#" data-toggle="dropdown" aria-expanded="false">Language
+      <span class="caret"></span>
+    </a>
+    <ul class="menu dropdown-menu dropdown--menu-language">
+      {% for item in items %}
+      <li class="expanded dropdown dropdown--items-language">
+        <a href="" data-drupal-link-system-path="<front>" class="is-active dropdown--active-language">{{item}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+</ul>

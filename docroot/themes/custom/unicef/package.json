@@ -1,0 +1,42 @@
+{
+  "name": "UNICEF",
+  "version": "0.4.0",
+  "scripts": {
+    "start": "gulp gulp:serve",
+    "build": "gulp gulp:build"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "*",
+    "babelify": "*",
+    "browser-sync": "*",
+    "browserify": "*",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "*",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "*",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "*",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sass-lint": "^1.2.0",
+    "gulp-sequence": "^0.4.5",
+    "gulp-sourcemaps": "^2.5.0",
+    "gulp-svg-sprite": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.8",
+    "normalize.css": "*",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "*"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

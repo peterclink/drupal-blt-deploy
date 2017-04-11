@@ -1,0 +1,144 @@
+%svg-common {
+	background: url("../images/sprites/sprite.css.svg") no-repeat;
+}
+
+.svg-dropdown-arrow {
+	@extend %svg-common;
+	background-position: 99.01277584204414% 65.47314578005115%;
+}
+
+.svg-dropdown-arrow-dims {
+	width: 14px;
+	height: 10px;
+}
+
+.svg-dropdown-arrow-blue {
+	@extend %svg-common;
+	background-position: 98.19976771196283% 65.47314578005115%;
+}
+
+.svg-dropdown-arrow-blue-dims {
+	width: 14px;
+	height: 10px;
+}
+
+.svg-feed {
+	@extend %svg-common;
+	background-position: 97.38372093023256% 65.97938144329896%;
+}
+
+.svg-feed-dims {
+	width: 16px;
+	height: 16px;
+}
+
+.svg-icon__facebook {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-icon__facebook-dims {
+	width: 512px;
+	height: 512px;
+}
+
+.svg-icon__facebook-full {
+	@extend %svg-common;
+	background-position: 41.658158055952626% 81.96533993525043%;
+}
+
+.svg-icon__facebook-full-dims {
+	width: 266.9px;
+	height: 266.9px;
+}
+
+.svg-icon__rss {
+	@extend %svg-common;
+	background-position: 92.38334622555614% 81.19057754108148%;
+}
+
+.svg-icon__rss-dims {
+	width: 56.693px;
+	height: 56.693px;
+}
+
+.svg-icon__share {
+	@extend %svg-common;
+	background-position: 89.02497027348394% 81.55737704918033%;
+}
+
+.svg-icon__share-dims {
+	width: 54px;
+	height: 60px;
+}
+
+.svg-icon__tumblr {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-icon__tumblr-dims {
+	width: 612px;
+	height: 792px;
+}
+
+.svg-icon__twitter {
+	@extend %svg-common;
+	background-position: 83.68658553261317% 98.63109863109864%;
+}
+
+.svg-icon__twitter-dims {
+	width: 273.4px;
+	height: 222.2px;
+}
+
+.svg-icon__youtube {
+	@extend %svg-common;
+	background-position: 54.44839857651245% 0;
+}
+
+.svg-icon__youtube-dims {
+	width: 612px;
+	height: 430.4px;
+}
+
+.svg-logo-unicef {
+	@extend %svg-common;
+	background-position: 93.99874450721909% 74.24042272126816%;
+}
+
+.svg-logo-unicef-dims {
+	width: 143px;
+	height: 35px;
+}
+
+.svg-logo-unicef-global {
+	@extend %svg-common;
+	background-position: 90.73387694588584% 69.00269541778975%;
+}
+
+.svg-logo-unicef-global-dims {
+	width: 387px;
+	height: 50px;
+}
+
+.svg-menu {
+	@extend %svg-common;
+	background-position: 95.2127659574468% 68.44919786096257%;
+}
+
+.svg-menu-dims {
+	width: 44px;
+	height: 44px;
+}
+
+.svg-search_icon {
+	@extend %svg-common;
+	background-position: 96.44522144522145% 66.23544631306598%;
+}
+
+.svg-search_icon-dims {
+	width: 20px;
+	height: 19px;
+}
+

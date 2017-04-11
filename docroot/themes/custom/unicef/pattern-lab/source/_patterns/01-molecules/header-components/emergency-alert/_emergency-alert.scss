@@ -1,0 +1,27 @@
+.emergency-alert {
+	float: left;
+	width: 100%;
+	background: #ffffff;
+	padding: 20px;
+
+	p {
+		margin: 0;
+		padding: 5px 0;
+		color: $color-orange;
+		float: left;
+	}
+
+	.btn-dest {
+		float: right;
+	}
+
+	.btn-close {
+		margin: 7px 0 0 20px;
+		float: right;
+		@include font-roboto;
+      	@include font-size(24px);
+		color: $color-blue;
+	}
+
+}
+

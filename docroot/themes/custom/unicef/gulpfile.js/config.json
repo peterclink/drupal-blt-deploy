@@ -1,0 +1,74 @@
+{
+    "root": {
+        "src": "./assets/src",
+        "dest": "./assets/dist"
+    },
+    "tasks": {
+        "browserSync": {
+            "server": {
+                "baseDir": "assets/dist",
+                "injectChanges": true,
+                "notify": false
+            }
+        },
+
+        "html": {
+            "src": "templates",
+            "dest": "./",
+            "extensions": ["html", "json"]
+        },
+
+        "images": {
+            "src": "images",
+            "dest": "images",
+            "extensions": ["jpg", "png", "svg", "gif"]
+        },
+
+        "fonts": {
+            "src": "fonts",
+            "dest": "fonts",
+            "extensions": ["ttf", "woff", "woff2", "eot", "svg"]
+        },
+
+        "css": {
+            "src": "sass",
+            "dest": "css",
+            "autoprefixer": {
+                "browsers": ["last 3 version"]
+            },
+            "sass": {
+              "outputStyle": "compressed"
+            },
+            "extensions": ["sass", "scss", "css"]
+        },
+
+        "js": {
+            "src": "js/",
+            "dest": "js/",
+            "destName": "bundle.js",
+            "srcName": "app.js",
+            "extensions": ["js"]
+        },
+
+        "libs": {
+            "src": "scripts/libs/",
+            "dest": "scripts/",
+            "destName": "plugins.js",
+            "extensions": ["js"]
+        },
+
+        "modernizr": {
+            "src": "./",
+            "dest": "js/",
+            "options": ["setClasses", "addTest", "html5shiv"],
+            "extensions": ["scss", "js"]
+        },
+
+        "svg": {
+            "src": "images/icons",
+            "dest": "assets/src/images/",
+            "spriteDest": "dist/images/",
+            "extension": "svg"
+        }
+    }
+}

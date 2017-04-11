@@ -1,0 +1,16 @@
+.banner--media-only{
+  width: 100%;
+  height: 340px;
+  line-height: 340px;
+  text-align: center;
+  background-color: $color-gray-light;
+  border: 1px solid $color-black;
+  @include breakpoint(dog){
+    height: 360px;
+    line-height: 340px;
+  }
+  @include breakpoint(horse){
+    height: 640px;
+    line-height: 640px;
+  }
+}

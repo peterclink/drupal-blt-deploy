@@ -1,0 +1,20 @@
+name: 'Basic page'
+description: 'Provides Basic page content type and related configuration. Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - inline_entity_form
+  - lightning_workflow
+  - menu_ui
+  - metatag
+  - node
+  - panelizer
+  - path
+  - scheduled_updates
+  - text
+  - unicef_regional_core
+  - user
+  - workbench_moderation
+version: 8.x-1.0
+package: unicef_regional

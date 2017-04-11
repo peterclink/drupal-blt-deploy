@@ -1,0 +1,189 @@
+
+/*
+ * ===========================
+ * Breakpoints - Media Queries
+ * @include breakpoint(mouse) { }
+ * ===========================
+ */
+
+@mixin breakpoint( $breakpoint ) {
+	@if $breakpoint == mouse {
+		@media only screen and (min-width: 480px) { @content; }
+	}
+
+	@else if $breakpoint == dog {
+		@media only screen and (min-width: 768px) { @content; }
+	}
+
+	@else if $breakpoint == horse {
+		@media only screen and (min-width: 992px) { @content; }
+	}
+
+	@else if $breakpoint == elephant {
+		@media only screen and (min-width: 1200px) { @content; }
+	}
+
+	@else if $breakpoint == whale {
+		@media only screen and (min-width: 1440px) { @content; }
+	}
+
+	@else if $breakpoint == chameleon {
+		@media print, ( -o-min-device-pixel-ratio: 5/4 ), ( -webkit-min-device-pixel-ratio: 1.25 ), ( min-resolution: 120dpi ) { @content; }
+	}
+
+	@else {
+		@media only screen and (min-width: $breakpoint) { @content; }
+	}
+}
+
+
+
+/*
+ * ===========================
+ * MIXIN FONT-FAMILY
+ * @include font-FONT-NAME;
+ * ===========================
+ */
+
+
+@mixin font-roboto {
+ 	font-family: 'Roboto', serif;
+}
+
+@mixin font-roboto-light {
+ 	font-family: 'Roboto', serif;
+ 	font-weight: 300;
+}
+
+@mixin font-roboto-bold {
+ 	font-family: 'Roboto', serif;
+ 	font-weight: bold;
+}
+
+@mixin font-pt-serif {
+ 	font-family: 'PT Serif', serif;
+}
+
+/* ------- FONTES - REM ------- */
+@function rem( $target, $context: 16px ) {
+	@return ( $target / $context ) * 1rem;
+}
+
+/* ------- FONTES - EM ------- */
+@function em( $target, $context: 16 ) {
+	@return ( $target / $context ) * 1em;
+}
+
+/*
+ * ===========================
+ * MIXIN FONT-SIZE
+ * @include font-size(16px);
+ * ===========================
+ */
+
+@mixin font-size($target, $context: 16px) {
+    font-size: $target;
+    font-size: rem($target,$context);
+}
+
+/*
+ * ===========================
+ * MIXIN BORDER-RADIUS
+ * @include border-radius(5px);
+ * ===========================
+ */
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+ 	border-radius: $radius;
+ 	background-clip: padding-box;
+}
+
+/* Single side border-radius */
+@mixin border-top-radius($radius) {
+	-webkit-border-top-right-radius: $radius;
+	border-top-right-radius: $radius;
+	-webkit-border-top-left-radius: $radius;
+	border-top-left-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+	-webkit-border-top-right-radius: $radius;
+	border-top-right-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+	background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+	-webkit-border-bottom-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+	-webkit-border-top-left-radius: $radius;
+	border-top-left-radius: $radius;
+ 	background-clip: padding-box;
+}
+/*
+ * ===========================
+ * MIXIN BOX-SHADOW
+ * @include box-shadow(0, 2px, 10px, rgba(0,0,0,0.5));
+ * ===========================
+ */
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+ 	@if $inset {
+    	-webkit-box-shadow:inset $top $left $blur $color $inset;
+    	-moz-box-shadow:inset $top $left $blur $color $inset;
+    	box-shadow:inset $top $left $blur $color $inset;
+ 	} @else {
+    	-webkit-box-shadow: $top $left $blur $color;
+    	-moz-box-shadow: $top $left $blur $color;
+    	box-shadow: $top $left $blur $color;
+ 	}
+}
+
+/*
+ * ===========================
+ * MIXIN OPACITY
+ * @include opacity(0.9);
+ * ===========================
+ */
+
+@mixin opacity($opacity) {
+ 	opacity: $opacity;
+ 	$opacity-ie: $opacity * 100;
+ 	filter: alpha(opacity=$opacity-ie);
+}
+
+/*
+ * ===========================
+ * MIXIN CENTER BLOCK
+ * @include center-block;
+ * ===========================
+ */
+
+@mixin center-block {
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+}
+
+
+/*
+ * ===========================
+ * MIXIN TRANSITION
+ * @include transition(color .3s ease);
+ * ===========================
+ */
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
