@@ -63,5 +63,6 @@ deploy:
      skip_cleanup: true
      on:
        repo: peterclink/test-deploy
+       tags: true
        branch: develop
        php: 5.6
