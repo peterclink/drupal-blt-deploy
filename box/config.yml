@@ -1,6 +1,6 @@
 # Update the hostname to the local development environment hostname.
-vagrant_hostname: local.unicefplatform.com
-vagrant_machine_name: unicefplatform
+vagrant_hostname: local.testdeploy.com
+vagrant_machine_name: testdeploy
 
 # Set the IP address so it doesn't conflict with other Drupal VM instances.
 vagrant_ip: 192.168.25.8
@@ -16,7 +16,7 @@ vagrant_synced_folders:
   # Set the local_path for the first synced folder to `.`.
   - local_path: .
     # Set the destination to the Acquia Cloud subscription machine name.
-    destination: /var/www/unicefplatform
+    destination: /var/www/testdeploy
     type: nfs
 
 drupal_build_composer_project: false

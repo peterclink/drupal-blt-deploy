@@ -360,13 +360,14 @@
 #    'root' => $aliases['dev']['root'],
 #  ) + $aliases['server'];
 // [vagrant_machine_name].local
-$aliases['unicefplatform.local'] = array(
+// [vagrant_machine_name].local
+$aliases['testdeploy.local'] = array(
   // /var/www/[vagrant_machine_name]/docroot
-  'root' => '/var/www/unicefplatform/docroot',
+  'root' => '/var/www/testdeploy/docroot',
   // vagrant_hostname
-  'uri' => 'http://local.unicefplatform.com',
+  'uri' => 'http://local.testdeploy.com',
   // vagrant_hostname
-  'remote-host' => 'local.unicefplatform.com',
+  'remote-host' => 'local.testdeploy.com',
   'remote-user' => 'vagrant',
   'ssh-options' => '-o PasswordAuthentication=no -i ' . drush_server_home() . '/.vagrant.d/insecure_private_key'
 );

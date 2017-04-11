@@ -1,7 +1,7 @@
 project:
-  machine_name: unicefplatform
-  prefix: MCANUNI
-  human_name: 'UNICEF Global Platform'
+  machine_name: testdeploy
+  prefix: TEST
+  human_name: 'TEST DEPLOY'
   profile:
     name: unicef_regional
   local:
@@ -10,7 +10,7 @@ project:
 git:
   default_branch: master
   remotes:
-    - 'unicefplatform@svn-4508.devcloud.hosting.acquia.com:unicefplatform.git'
+    - 'testdeployment@svn-6489.devcloud.hosting.acquia.com:testdeployment.git'
 drush:
   aliases:
     remote: '${project.machine_name}.test'
