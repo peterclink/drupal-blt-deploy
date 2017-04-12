@@ -1,5 +1,0 @@
-bundle: unicef_regional
-excluded:
-  - user.role.landing_page_creator
-  - user.role.landing_page_reviewer
-required: true
