@@ -1,6 +1,6 @@
 project:
   machine_name: test-deploy
-  prefix: BLT
+  prefix: TEST
   human_name: 'BLTed 8'
   profile:
     name: lightning
@@ -8,8 +8,9 @@ project:
     protocol: http
     hostname: 'local.${project.machine_name}.com'
 git:
-  default_branch: master
-  remotes: {  }
+  default_branch: develop
+  remotes:
+    - 'testdeployment@svn-6489.devcloud.hosting.acquia.com:testdeployment.git'
 drush:
   aliases:
     remote: '${project.machine_name}.test'
@@ -38,18 +39,18 @@ target-hooks:
 import: null
 modules:
   local:
-    enable: [dblog, devel, seckit, views_ui]
-    uninstall: [acsf, acquia_connector, shield]
+    enable: {  }
+    uninstall: {  }
   ci:
     enable: {  }
-    uninstall: [acquia_connector, shield]
+    uninstall: {  }
   dev:
-    enable: [acquia_connector, shield]
+    enable: {  }
     uninstall: {  }
   test:
-    enable: [acquia_connector, shield]
-    uninstall: [devel, views_ui]
+    enable: {  }
+    uninstall: {  }
   prod:
-    enable: [acquia_connector, shield]
-    uninstall: [devel, views_ui]
+    enable: {  }
+    uninstall: {  }
 
