@@ -35,12 +35,17 @@ cache:
 
 addons:
   ssh_known_hosts:
-  # - svn-4786.devcloud.hosting.acquia.com
+   - svn-6489.devcloud.hosting.acquia.com
 
 # @see https://docs.travis-ci.com/user/notifications
 notifications:
 # - hipchat: [api token]@[room id or name]
 # - slack: '<account>:<token>#[channel]'
+  recipients:
+    email:
+      - peter.link@mirumagency.com
+  on_success: always
+  on_failure: always
 
 before_install:
   # Disable xdebug.
@@ -52,6 +57,15 @@ before_install:
 install:
   - source ${BLT_DIR}/scripts/travis/setup_environment
   - source $BLT_DIR/scripts/travis/setup_project
+
+before_script:
+  # Tweak PHP configuration.
+  # Copied from Lightning.
+  # We were getting an error where drush si is trying to send mail even though the flag to prevent that was set.
+  - echo 'max_execution_time = 120' >> drupal.php.ini;
+  - echo 'sendmail_path = /bin/true' >> drupal.php.ini;
+  - phpenv config-add drupal.php.ini
+  - phpenv rehash
 
 script:
   - source $BLT_DIR/scripts/travis/run_tests
